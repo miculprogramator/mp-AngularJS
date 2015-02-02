@@ -1,0 +1,12 @@
+[{
+	"name" : "Test de pe mp",
+	"content" : "Acesta este un articol",
+	"date": "22-12-2013",
+	"autor" : "Micul Programator"
+},
+{
+	"name" : "Test2 de pe mp",
+	"content" : "Acesta este un articolul 2",
+	"date": "22-12-2014",
+	"autor" : "Micul Programator"
+}]

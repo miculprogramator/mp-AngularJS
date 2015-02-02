@@ -1,0 +1,32 @@
+<div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-12" ng-repeat="art in Intro.articles">
+        <!-- First Blog Post -->
+        <h2>
+            <a href="#">{{art.name}}</a>
+        </h2>
+        <p class="lead">
+            Autor: <a href="index.php">{{art.autor}}</a>
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span> Postat pe  {{art.date}}</p>
+        <hr>
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+        <hr>
+        <p>{{art.content}}
+        <a class="btn btn-primary" href="#">Citeste tot <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </p>
+
+    </div>
+    <div class="col-md-12" >
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+            <li class="previous">
+                <a href="#">&larr; Articolul Anterior</a>
+            </li>
+            <li class="next">
+                <a href="#">Articolul urmator &rarr;</a>
+            </li>
+        </ul>
+    </div>
+</div>
