@@ -1,10 +1,19 @@
-'use strict'
-//main content
-mp.directive('mpContent', [function() {
+(function() {
+    'use strict';
+    //main content
 
-    return {
-        replace: true,
-        restrict: 'E',  
-        templateUrl: "public/views/main/mp-content.html",
-    };
-}]);
+    function mpContent() {
+
+        return {
+
+            replace: true,
+            restrict: 'E',  
+            templateUrl: "public/views/main/mp-content.html",
+        };
+    }
+
+    mp
+        .directive('mpContent', mpContent);
+
+}());
+

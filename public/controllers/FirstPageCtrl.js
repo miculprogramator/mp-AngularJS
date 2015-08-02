@@ -1,16 +1,25 @@
-'use strict';
+(function() {
 
-mp.controller('FirstPageCtrl',['$scope','Articles', function($scope,Articles) { 
+    'use strict';
 
-	var self = this;
-	self.art = [];
+    function FirstPageCtrl($scope, Articles) { 
 
-	Articles.all({}, function(data) {
-		self.articles = data;
-	}, function(data) {
-		console.log("Error:", data);
-	});
+        var self = this;
+        self.art = [];
 
-	return $scope.Intro = self;
+        Articles.all({}, function(data) {
+            self.articles = data;
+        }, function(data) {
+            console.log("Error:", data);
+        });
 
-}]);
+        return ($scope.Intro = self);
+
+    }
+
+    FirstPageCtrl
+        .$inject = ['$scope','Articles'];
+
+    mp
+        .controller('FirstPageCtrl',FirstPageCtrl);
+}());

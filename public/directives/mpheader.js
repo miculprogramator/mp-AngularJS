@@ -1,10 +1,17 @@
-'use strict'
-//pagenavbar
-mp.directive('mpHeader', [function() {
+(function() {
 
-    return {
-        replace: true,
-        restrict: 'E',  
-        templateUrl: "public/views/main/mp-header.html",
-    };
-}]);
+    'use strict';
+    
+    function mpHeader() {
+
+        return {
+            replace: true,
+            restrict: 'E',  
+            templateUrl: "public/views/main/mp-header.html",
+        };
+    }
+    //pagenavbar
+    mp
+        .directive('mpHeader', mpHeader);
+
+}());

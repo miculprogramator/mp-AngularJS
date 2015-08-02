@@ -1,7 +1,14 @@
-'use strict';
+(function(){
 
-mp.controller('MainCtrl',['$rootScope', function($rootScope) { 
+    'use strict';
 
-	console.log("---Apel controler principal, wrapper pentru intreaga aplicatie---");
+    function MainCtrl($rootScope) { 
 
-}]);
+        console.log("---Apel controler principal----");
+    }
+
+
+    mp
+        .controller('MainCtrl', MainCtrl);
+
+}());

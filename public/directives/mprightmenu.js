@@ -1,10 +1,17 @@
-'use strict'
-//main content
-mp.directive('mpRightMenu', [function() {
+(function() {
+    
+    'use strict';
+    //main content
+    function mpRightMenu() {
 
-    return {
-        replace: true,
-        restrict: 'E',  
-        templateUrl: "public/views/main/mprightmenu.html",
-    };
-}]);
+        return {
+            replace: true,
+            restrict: 'E',  
+            templateUrl: "public/views/main/mprightmenu.html",
+        };
+    }
+
+    mp
+        .directive('mpRightMenu', mpRightMenu);
+
+}());
